@@ -1,0 +1,29 @@
+⟨key⟩ 
+  regex([a-Z0-9]+)
+
+⟨string⟩
+  regex(".*") | regex('.*')
+
+⟨number⟩
+  regex([1-9][0-9]*) | regex([1-9][0-9]*.[0-9]+) | regex(0.[0-9]+)
+
+⟨boolean⟩
+  true | false
+
+⟨array_item⟩
+  ⟨value⟩ | ⟨value⟩, ⟨array_item⟩
+
+⟨array⟩
+  [⟨array_item⟩]
+
+⟨map_item⟩
+  ⟨value⟩ =>  ⟨value⟩ | ⟨value⟩ =>  ⟨value⟩, ⟨map_item⟩
+  
+⟨map⟩
+  [⟨map_item⟩]
+
+⟨value⟩
+  ⟨string⟩ | ⟨array⟩ | ⟨map⟩ | ⟨number⟩ | ⟨boolean⟩
+
+⟨rule⟩ 
+  ⟨key⟩ = ⟨value⟩  
