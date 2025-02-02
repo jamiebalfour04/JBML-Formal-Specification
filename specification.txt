@@ -1,3 +1,6 @@
+⟨newLine⟩
+  \n | \r | \r\n
+
 ⟨key⟩ 
   regex([a-Z0-9]+)
 
@@ -26,4 +29,4 @@
   ⟨string⟩ | ⟨array⟩ | ⟨map⟩ | ⟨number⟩ | ⟨boolean⟩
 
 ⟨rule⟩ 
-  ⟨key⟩ = ⟨value⟩  
+  ⟨key⟩ = ⟨value⟩ ⟨newLine⟩
