@@ -20,10 +20,10 @@
   [⟨array_item⟩]
 
 ⟨map_item⟩
-  ⟨value⟩ => ⟨value⟩ | ⟨value⟩ => ⟨value⟩, ⟨map_item⟩
+  ⟨value⟩ : ⟨value⟩ | ⟨value⟩ : ⟨value⟩, ⟨map_item⟩
   
 ⟨map⟩
-  [⟨map_item⟩]
+  {⟨map_item⟩}
 
 ⟨value⟩
   ⟨string⟩ | ⟨array⟩ | ⟨map⟩ | ⟨number⟩ | ⟨boolean⟩
