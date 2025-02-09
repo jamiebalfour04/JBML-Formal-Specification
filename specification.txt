@@ -4,6 +4,12 @@
 ⟨key⟩ 
   regex([a-Z0-9]+)
 
+⟨property⟩
+  ⟨key⟩
+
+⟨concatenation⟩
+  &
+
 ⟨string⟩
   regex(".*") | regex('.*')
 
@@ -26,7 +32,7 @@
   {⟨map_item⟩}
 
 ⟨value⟩
-  ⟨string⟩ | ⟨array⟩ | ⟨map⟩ | ⟨number⟩ | ⟨boolean⟩
+  ⟨string⟩ | ⟨string⟩ ⟨concatenation⟩ ⟨value⟩ | ⟨array⟩ | ⟨map⟩ | ⟨number⟩ | ⟨boolean⟩ | ⟨property⟩
 
 ⟨rule⟩ 
   ⟨key⟩ = ⟨value⟩ ⟨newLine⟩
