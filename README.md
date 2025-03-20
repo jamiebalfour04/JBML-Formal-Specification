@@ -11,7 +11,7 @@ Much like TOML, a _value_ can be a string (e.g. ```intro = "Hello world"```), in
 Additionally, JBML supports additional types in the _value_ including:
 - mappings (e.g. ```letters = { "x" : 1, "y" : 3}```)
 - concatenation (e.g. ```intro = "Hello " **&** "world"```)
-- [properties](properties) (e.g. ```name = firstname```)
+- properties (e.g. ```name = firstname```)
 
 ### Properties
 Properties, also known as predefined values, work similarly to variables. Properties reference previously defined keys within the current group. See the code block below which demonstrates the concatenation of the ip and port properties to create an actual connect string.
