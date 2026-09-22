@@ -10,7 +10,7 @@ Much like TOML, a _value_ can be a string (e.g. ```intro = "Hello world"```), in
 
 Additionally, JBML supports additional types in the _value_ including:
 - mappings (e.g. ```letters = { "x" : 1, "y" : 3}```)
-- concatenation (e.g. ```intro = "Hello " **&** "world"```)
+- concatenation (e.g. ```intro = "Hello " & "world"```)
 - properties (e.g. ```name = firstname```)
 
 ### Properties
